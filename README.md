@@ -1,2 +1,0 @@
-# processes_and_threads
-java使用多线程和多进程学习
