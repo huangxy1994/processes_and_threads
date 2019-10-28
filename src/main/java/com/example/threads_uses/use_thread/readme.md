@@ -16,3 +16,12 @@
 |public final void join(long millisec)|等待该线程终止的时间最长为 millis 毫秒。|
 |public void interrupt()|中断线程。|
 |public final boolean isAlive()|测试线程是否处于活动状态|
+
+## Thread类静态方法
+|方法|描述|
+|---|---|
+|public static void yield()|暂停当前正在执行的线程对象，并执行其他线程。|
+|public static void sleep(long millisec)|在指定的毫秒数内让当前正在执行的线程休眠（暂停执行），此操作受到系统计时器和调度程序精度和准确性的影响|
+|public static boolean holdsLock(Object x)|当且仅当当前线程在指定的对象上保持监视器锁时，才返回 true。|
+|public static Thread currentThread()|返回对当前正在执行的线程对象的引用。|
+|public static void dumpStack()|将当前线程的堆栈跟踪打印至标准错误流。|

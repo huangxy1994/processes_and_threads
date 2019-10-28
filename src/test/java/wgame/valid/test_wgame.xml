@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="接口测试" verbose="1">
+    <test name="简单测试" preserve-order="true">
+        <classes>
+            <class name="wgame.valid.test_func1">
+                <methods>
+                    <include name="test_1_1_1"/>
+                    <include name="test_1_2"/>
+                    <include name="test_1_3"/>
+                </methods>
+            </class>
+            <class name="wgame.valid.test_func2"></class>
+        </classes>
+    </test>
+</suite>

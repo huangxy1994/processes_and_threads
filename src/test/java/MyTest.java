@@ -11,7 +11,8 @@ import org.slf4j.LoggerFactory;
 @Slf4j
 public class MyTest {
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger("response");
-        logger.info("hello world!");
+        // Logger logger = LoggerFactory.getLogger("response");
+        // logger.info("hello world!");
+        System.out.println(Integer.MAX_VALUE);
     }
 }

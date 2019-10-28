@@ -21,6 +21,7 @@ public class UseRunnable implements Runnable {
 
     public void run() {
         log.info("Running " + threadName);
+        System.out.println(Thread.currentThread().getName());
         try {
             for (int i = 4; i > 0; i--) {
                 log.info("Thread：" + threadName + " ===> " + i);
@@ -41,9 +42,9 @@ public class UseRunnable implements Runnable {
     }
 
     public static void main(String[] args) {
-        UseRunnable runnable = new UseRunnable("Thread-1");
+        UseRunnable runnable = new UseRunnable("Thread--1");
         runnable.start();
-        UseRunnable runnable2 = new UseRunnable("Thread-2");
+        UseRunnable runnable2 = new UseRunnable("Thread--2");
         runnable2.start();
     }
 }
